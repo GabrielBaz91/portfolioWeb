@@ -1,13 +1,14 @@
 /* Variables de color actualizadas */
+/* Variables de color */
 :root {
-    --color-start: #16a085;    /* Verde agua más oscuro */
-    --color-mid: #3498db;      /* Celeste (mantenido) */
-    --color-end: #2980b9;      /* Azul más oscuro para contraste */
+    --color-start: #16a085;    /* Verde agua oscuro */
+    --color-mid: #3498db;      /* Celeste */
+    --color-end: #2980b9;      /* Azul */
     --text-light: #ecf0f1;
     --text-dark: #2c3e50;
-    --bg-dark: #1a2a3a;        /* Fondo más oscuro */
+    --bg-dark: #1a2a3a;
     --card-bg: #2c3e50;
-    --github-color: #2c3e50;   /* Color GitHub coordinado */
+    --github-color: #2c3e50;
 }
 /* Estilos generales */
 body {
@@ -538,5 +539,27 @@ nav {
     nav {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+.profile-img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--card-bg);
+    box-shadow: 0 0 0 2px var(--color-mid);
+    transition: all 0.5s ease;
+}
+
+.about-section:hover .profile-img {
+    transform: rotate(5deg);
+    box-shadow: 0 0 0 2px var(--color-start);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 12rem;
+        height: 12rem;
     }
 }
