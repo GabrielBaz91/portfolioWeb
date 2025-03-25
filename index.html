@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Gabriel Baz - Desarrollador Full Stack</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -14,38 +15,34 @@
                 <a href="#about" class="nav-btn active">Sobre Mí</a>
                 <a href="#projects" class="nav-btn">Proyectos</a>
                 <a href="#skills" class="nav-btn">Habilidades</a>
-                <a href="https://github.com/tuusuario" target="_blank" class="nav-btn github-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
+                <a href="#contact" class="nav-btn">Contacto</a>
+                <a href="https://github.com/GabrielBaz91" target="_blank" class="nav-btn github-btn">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
             </nav>
         </header>
 
         <section id="about" class="about-section slide-in-left">
             <div class="profile-pic">
-                <!-- SOLO REEMPLAZA "tu-foto.jpg" CON EL NOMBRE DE TU IMAGEN -->
-                <img src="img/WhatsApp_Image_2024-12-04_at_20.45.49_-_copia-removebg-preview.png" alt="Gabriel Baz - Desarrollador Full Stack" class="profile-img">
+                <img src="img/SPACE  ESPACIO.jpg" alt="Gabriel Baz" class="profile-img">
             </div>
             <div class="about-content">
                 <h2>Sobre Mí</h2>
                 <p>
-                    Desarrollador Full Stack con especialización en Java y Spring Boot. 
-                    Apasionado por crear soluciones tecnológicas robustas y escalables 
-                    con código limpio y arquitecturas bien diseñadas.
-                </p>
-                <p>
-                    Mi enfoque combina habilidades técnicas sólidas con una mentalidad 
-                    orientada a resolver problemas empresariales reales.
+                    Desarrollador Full Stack autodidacta con sólido dominio de <strong>Java y Spring Boot</strong>, 
+                    aprendiendo cada día para mejorar mis habilidades en desarrollo backend con <strong>Hibernate, JPA y Spring Security</strong>, 
+                    y frontend con las bases de <strong>HTML, CSS y JavaScript</strong>. Más que años de experiencia, 
+                    ofrezco pasión por programar, atención al detalle y la voluntad de aprender lo que sea necesario 
+                    para entregar soluciones efectivas.
                 </p>
             </div>
         </section>
 
-        <!-- Resto de tu HTML se mantiene igual -->
         <section id="projects" class="projects-section scale-in">
             <h2>Proyectos Destacados</h2>
-            <div class="projects-grid" id="projects-container"></div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Proyectos se cargan dinámicamente con JS -->
+            </div>
         </section>
 
         <section id="skills" class="skills-section slide-in-bottom">
@@ -59,6 +56,32 @@
                     <h3>Front End</h3>
                     <div class="skills-container" id="frontend-skills"></div>
                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section slide-in-bottom">
+            <h2>Contacto</h2>
+            <div class="contact-methods">
+                <a href="tel:1166197662" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Teléfono</h3>
+                    <p>11 6619-7662</p>
+                    <span class="contact-hint"></span>
+                </a>
+                
+                <a href="https://wa.me/541166197662" target="_blank" class="contact-card whatsapp-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>11 6619-7662</p>
+                    <span class="contact-hint"></span>
+                </a>
+                
+                <a href="mailto:gabrielbaz91@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>gabrielbaz91@gmail.com</p>
+                    <span class="contact-hint"></span>
+                </a>
             </div>
         </section>
     </div>
